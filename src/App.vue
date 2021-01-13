@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <countries-list :countries='countries'></countries-list>
-    <country-detail :selectedCountry='selectedCountry'></country-detail>
+    <country-detail :country='selectedCountry'></country-detail>
   </div>
 </template>
 
@@ -9,7 +9,7 @@
 import {eventBus} from './main.js';
 import ListCountry from './components/ListCountry.vue';
 import CountriesList from './components/CountriesList.vue';
-import CountryDetail from './components/CountyDetail.vue';
+import CountryDetail from './components/CountryDetail.vue';
 
 export default {
   name: 'App',
